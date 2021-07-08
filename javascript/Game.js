@@ -23,6 +23,7 @@ class Game{
     );
   }
 
+
   playerSelection(){
     console.log("%c Choose Your Player :",'color:blue')
     this.characters.map((el,index) =>{

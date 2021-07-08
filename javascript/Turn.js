@@ -92,7 +92,7 @@ class Turn{
     console.log("%c"+player.stats(),"color:cyan")
     console.log('%cChoose your action: ','color:blue')
     console.log('1- Fast attack')
-    console.log('2- Spécial attack : %c${player.specialAttackName()}','color:blue')
+    console.log('2- Special attack')
     console.log('3- Stats of players still alive')
     console.log('\n')
     let answerCorrect = false;

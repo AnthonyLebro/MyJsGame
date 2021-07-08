@@ -1,4 +1,4 @@
-class Paladin extends Character{
+class Paladin extends Characters{
   constructor(name,hp = 16,dmg = 3,mana = 160){
     super(name,hp,dmg,mana,status);
     this.description ='chevalier puissant et défensif'

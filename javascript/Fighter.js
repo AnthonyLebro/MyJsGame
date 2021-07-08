@@ -3,7 +3,6 @@ class Fighter extends Characters{
   constructor(name,hp = 12,dmg = 4,mana = 40,protection = false){
     super(name,hp,dmg,mana,status);
     this.protection = protection
-    this.description = 'combattant équilibré sous tous les bords'
   }
 
   specialAttackName(){
