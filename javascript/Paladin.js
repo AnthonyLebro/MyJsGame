@@ -1,4 +1,4 @@
-class Paladin extends Character {
+class Paladin extends Characters {
   constructor(name, hp, dmg, mana) {
       super(name, hp, dmg, mana);
     this.hp = 16;

@@ -1,4 +1,4 @@
-class Monk extends Character {
+class Monk extends Characters {
   constructor(name, hp, dmg, mana) {
           super(name, hp, dmg, mana);
     this.hp = 8;

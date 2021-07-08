@@ -1,4 +1,4 @@
-class Berzerder extends Character {
+class Berzerker extends Characters {
   constructor(name, hp, dmg, mana) {
     super(name);
     this.hp = 8;

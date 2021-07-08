@@ -1,4 +1,4 @@
-class Fighter extends Character {
+class Fighter extends Characters {
   constructor(name, hp, dmg, mana) {
     super(name, hp, dmg, mana)
     this.hp = 12;

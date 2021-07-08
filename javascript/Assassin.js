@@ -1,4 +1,4 @@
-class Assassin extends Character {
+class Assassin extends Characters {
   constructor(name, hp, dmg, mana) {
     super(name, hp, dmg, mana);
     this.hp = 6;
