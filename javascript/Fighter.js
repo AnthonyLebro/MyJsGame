@@ -1,14 +1,32 @@
-class Fighter extends Characters {
-  constructor(name, hp, dmg, mana) {
-    super(name, hp, dmg, mana)
-    this.hp = 12;
-    this.dmg = 4;
-    this.mana = 40;
+ 
+class Fighter extends Characters{
+  constructor(name,hp = 12,dmg = 4,mana = 40,protection = false){
+    super(name,hp,dmg,mana,status);
+    this.protection = protection
+    this.description = 'combattant équilibré sous tous les bords'
   }
 
-  darkVision = () => {
-    this.dmg = 5;
-    this.mana = this.mana - 20;
+  specialAttackName(){
+    return "Dark Vision - 20 MANA"
   }
 
+  specialAttack(player){
+    console.log('\n')
+    if (this.someMana()){
+      this.mana -= 20;
+      this.protection = true
+      console.log(`%c${this.name} a utilisé son attaque spécial ${this.specialAttackName()}`,'color:tomato')
+      console.log(`%cIl inflige 5 points de dégats`,'color:crimson')
+      console.log(`%cEt se protége de 2 points d'attaques durant le prochain tour`,'color:greenyellow')
+      player.takeDamages(5)
+      player.hp < 1 ? this.isKilled(player) : null ;
+    }else{
+      console.log("%cPlus assez de mana... dommage",'color:red')
+    }
+    console.log('\n')
+  }
+
+  someMana(){
+    return this.mana >= 20
+  }
 }
